@@ -83,9 +83,8 @@ function generatePassword(params = getPrompts()) {
   // May need to change for Chars to pwLength
 
   console.log(params.pwLength)
-for (let i = 0; i < chars.length; i++) {
-  const element = chars[i];
-  console.log(element)
+for (var i = results.length; i < params.pwLength; i++) {
+  results.push(getRandomIndex(chars))
 }
   return results.join("")
 }
