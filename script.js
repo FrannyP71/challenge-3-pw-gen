@@ -1,8 +1,8 @@
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
-var numbers = "0123456789"
-var uppercase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 var lowercase = "abcdefghijklmnopqrstuv"
+var uppercase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+var numbers = "0123456789"
 var special = "!@#$%^&*"
 //
 
@@ -23,9 +23,19 @@ function generatePassword() {
   var pwText = ""
 //evaluate prompt answers
 
+  if (askLower) {
+    selectedChars = selectedChars + lowercase
+  }
+  if (askUpper) {
+    selectedChars = selectedChars + uppercase
+  } 
   if (askNumeric) {
     selectedChars = selectedChars + numbers
   }
+  if (askSpecial) {
+    selectedChars = selectedChars + special
+  }
+  
 
   return pwText
 }
