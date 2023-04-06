@@ -6,3 +6,6 @@ This app will run in the browser and will feature dynamically updated HTML and C
 
 ![challenge-3-pw-gen](./password-gen.jpg)
 
+
+https://frannyp71.github.io/challenge-3-pw-gen/
+
